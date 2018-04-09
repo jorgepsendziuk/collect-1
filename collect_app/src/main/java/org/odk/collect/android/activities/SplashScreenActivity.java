@@ -43,7 +43,7 @@ import java.io.IOException;
 
 public class SplashScreenActivity extends Activity {
 
-    private static final int mSplashTimeout = 2000; // milliseconds
+    private static final int mSplashTimeout = 3000; // milliseconds
     private static final boolean EXIT = true;
 
     private int mImageMaxWidth;

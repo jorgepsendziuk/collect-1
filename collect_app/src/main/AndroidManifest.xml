@@ -21,7 +21,6 @@
     <uses-feature android:name="android.hardware.wifi" android:required="false" />
 
 
-
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -64,7 +63,7 @@
 		android:supportsRtl="true" 
         android:largeHeap="true"
         android:installLocation="auto"
-        android:icon="@drawable/notes"
+        android:icon="@drawable/mazu"
         android:label="@string/app_name"
         android:theme="@style/Collect"
         >
@@ -220,9 +219,9 @@
             android:name=".activities.BearingActivity"
             android:label="@string/app_name" />
         <activity
-            android:name=".activities.SplashScreenActivity"
+            android:name=".activities.MazuActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Dialog" >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -252,7 +251,7 @@
             </intent-filter>
         </receiver>
         <!-- Register AnalyticsReceiver and AnalyticsService to support background
-        dispatching on non-Google Play devices. -->
+        dispatching on non-Google Play devices.
         <receiver android:name="com.google.android.gms.analytics.AnalyticsReceiver"
             android:enabled="true">
             <intent-filter>
@@ -262,11 +261,11 @@
         <service android:name="com.google.android.gms.analytics.AnalyticsService"
             android:enabled="true"
             android:exported="false"/>
-        <!-- ... -->
+         ... -->
 
         <meta-data
                 android:name="com.google.android.geo.API_KEY"
-                android:value="AIzaSyBS-JQ-dnaZ_8qsbvSyr_I3rTPFd5fJsYI"/>
+                android:value="AIzaSyA8KOi4NmHw9pwoEt8GZMIkz_8K7ceNBVw"/>
 
         <meta-data
             tools:replace="android:value"

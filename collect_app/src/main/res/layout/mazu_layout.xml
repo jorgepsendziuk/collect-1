@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/rl"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_marginBottom="0dp"
+	android:layout_marginLeft="0dp"
+	android:layout_marginRight="0dp"
+	android:layout_marginTop="0dp"
+	android:orientation="vertical"
+	android:padding="0dp"
+    android:background="@android:color/background_light"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/row0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/mazu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:cropToPadding="false"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/logofull"
+                        android:visibility="visible"></ImageButton>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center">
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/mazucollect_butt"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_horizontal"
+                        android:src="@android:drawable/ic_input_add"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mazucollect_butt"
+                        android:layout_marginLeft="8dp"
+                        android:background="@android:color/background_light"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_coletar" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/mazu_send"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/transparent"
+                        android:src="@android:drawable/ic_menu_upload"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mazu_send"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="false"
+                        android:text="@string/menu_enviar" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/mazuedit_butt"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_horizontal"
+                        android:src="@android:drawable/ic_menu_edit"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mazuedit_butt"
+                        android:layout_marginLeft="8dp"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_editar" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/mazureceive_but"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_horizontal"
+                        android:src="@android:drawable/ic_menu_more"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mazureceive_but"
+                        android:layout_marginLeft="8dp"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_receber" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center_horizontal">
+
+                    <ImageButton
+                        android:id="@+id/mazudelete_data_butt"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_horizontal"
+                        android:src="@android:drawable/ic_menu_delete"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mazudelete_data_butt"
+                        android:layout_marginLeft="8dp"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:text="@string/menu_delete" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/mazu_map"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/transparent"
+                        android:src="@android:drawable/ic_menu_mapmode"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mazu_map"
+                        android:layout_marginLeft="24dp"
+                        android:clickable="false"
+                        android:text="@string/menu_mapa" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/mazusettings_butt"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_horizontal"
+                        android:src="@drawable/ic_menu_manage"></ImageButton>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mazusettings_butt"
+                        android:layout_marginLeft="7dp"
+                        android:clickable="false"
+                        android:text="@string/menu_config" />
+                </RelativeLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

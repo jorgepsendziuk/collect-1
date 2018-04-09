@@ -41,7 +41,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.android.gms.analytics.GoogleAnalytics;
+//import com.google.android.gms.analytics.GoogleAnalytics;
 
 import org.odk.collect.android.R;
 import org.odk.collect.android.application.Collect;
@@ -367,7 +367,8 @@ public class MainMenuActivity extends Activity {
 
         ((Collect) getApplication())
                 .getDefaultTracker()
-                .enableAutoActivityTracking(true);
+                //.enableAutoActivityTracking(true)
+                ;
     }
 
     @Override
@@ -549,8 +550,8 @@ public class MainMenuActivity extends Activity {
         SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(Collect
                 .getInstance());
         boolean isAnalyticsEnabled = settings.getBoolean(PreferenceKeys.KEY_ANALYTICS, true);
-        GoogleAnalytics googleAnalytics = GoogleAnalytics.getInstance(getApplicationContext());
-        googleAnalytics.setAppOptOut(!isAnalyticsEnabled);
+        //GoogleAnalytics googleAnalytics = GoogleAnalytics.getInstance(getApplicationContext());
+        //googleAnalytics.setAppOptOut(!isAnalyticsEnabled);
     }
 
     private void updateButtons() {

@@ -133,7 +133,6 @@
   <string name="use_odk_default">Usar Imagem Padrão</string>
   <string name="change_splash_path">Trocar Imagem</string>
   <string name="show_location">Mostrar Localização</string>
-  <string name="app_url">http://opendatakit.org</string>
   <string name="keep_changes">Salvar Alterações</string>
   <string name="go_to_location">Ir para Localização</string>
   <string name="change_formlist_url">Listagem do caminho do formulário (adicionado do URL do Servidor)</string>
@@ -296,6 +295,9 @@ Escolher Imagem</string>
   <string name="change_server_url">Servidor URL</string>
   <string name="no_blank_search">O campo de busca não pode estar em branco.</string>
   <string name="default_google_sheets_url"></string>
+    <string name="menu_coletar">Coletar Dados</string>
+  <string name="menu_enviar">Enviar Dados</string>
+  <string name="menu_editar">Editar Dados</string>
   <!--Geo string added in feature-geofeatures branch-->
   <!--&lt; and &gt; surrounds the text so it will appear as <no form loaded>-->
   <!--%1$s represents degrees, %2$s represents minutes and %3$s represents seconds as in W 18°48'8"-->
