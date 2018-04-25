@@ -1,35 +1,39 @@
 {
   "project_info": {
-    "project_number": "322300403941",
-    "project_id": "api-project-322300403941"
+    "project_number": "580934591070",
+    "firebase_url": "https://mazu-project.firebaseio.com",
+    "project_id": "mazu-project",
+    "storage_bucket": "mazu-project.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:322300403941:android:5e1d7c3c296329e8",
+        "mobilesdk_app_id": "1:580934591070:android:89f2ec2898f1eee7",
         "android_client_info": {
-          "package_name": "org.odk.collect.android"
+          "package_name": "com.genesis.coletor.android"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "580934591070-emgttp01umqd2c0b4c42eujio72nidnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDzdzuFvfI_BgaMAbIOBpfrVG3AIwhGIP8"
+          "current_key": "AIzaSyBqnbAidh2CmeHvqUyQH4oBB230apHtnuk"
         }
       ],
       "services": {
         "analytics_service": {
-          "status": 2,
-          "analytics_property": {
-            "tracking_id": "UA-91951913-1"
-          }
+          "status": 1
         },
         "appinvite_service": {
           "status": 1,
           "other_platform_oauth_client": []
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }

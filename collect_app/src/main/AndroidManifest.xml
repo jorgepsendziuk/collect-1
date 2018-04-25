@@ -10,7 +10,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.odk.collect.android"
+    package="com.genesis.coletor.android"
     >
 
     <uses-feature android:name="android.hardware.location" android:required="false" />
@@ -45,9 +45,9 @@
     -->
 
     <permission
-          android:name="org.odk.collect.android.permission.MAPS_RECEIVE"
+          android:name="com.genesis.coletor.android.permission.MAPS_RECEIVE"
           android:protectionLevel="signature" />
-    <uses-permission android:name="org.odk.collect.android.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.genesis.coletor.android.permission.MAPS_RECEIVE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <supports-screens
@@ -59,7 +59,7 @@
         android:smallScreens="true" />
 
     <application
-        android:name="org.odk.collect.android.application.Collect"
+        android:name="com.genesis.coletor.android.application.Collect"
 		android:supportsRtl="true" 
         android:largeHeap="true"
         android:installLocation="auto"
@@ -70,12 +70,12 @@
 
         <provider
             android:exported="true"
-            android:name="org.odk.collect.android.provider.FormsProvider"
-            android:authorities="org.odk.collect.android.provider.odk.forms" />
+            android:name="com.genesis.coletor.android.provider.FormsProvider"
+            android:authorities="com.genesis.coletor.android.provider.odk.forms" />
         <provider
             android:exported="true"
-            android:name="org.odk.collect.android.provider.InstanceProvider"
-            android:authorities="org.odk.collect.android.provider.odk.instances" />
+            android:name="com.genesis.coletor.android.provider.InstanceProvider"
+            android:authorities="com.genesis.coletor.android.provider.odk.instances" />
 
         <activity
             android:name=".activities.MainMenuActivity"
@@ -247,7 +247,7 @@
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="org.odk.collect.android.FormSaved" />
+                <action android:name="com.genesis.coletor.android.FormSaved" />
             </intent-filter>
         </receiver>
         <!-- Register AnalyticsReceiver and AnalyticsService to support background
